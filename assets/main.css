@@ -1,0 +1,146 @@
+/* Defaults */
+:root {
+  --c-primary: #31aae0;
+  --c-secondary: #122545;
+}
+
+.content a {
+  color: var(--c-primary);
+  transition: .3s color;
+}
+
+.content a:hover {
+  color: var(--c-secondary);
+}
+
+.container .button.is-primary,
+.container .button.is-primary:active,
+.container .button.is-primary.active {
+  background-color: var(--c-primary);
+  transition: .3s background-color;
+}
+
+.container .button.is-primary:hover,
+.container .button.is-primary.hover {
+  background-color: var(--c-secondary);
+}
+
+/* TRANSITIONS  */
+.page-enter-active, .page-leave-active {
+  transition: opacity .5s;
+}
+.page-enter, .page-leave-to {
+  opacity: 0;
+}
+
+/* HERO */
+
+.hero.is-share .tabs ul {
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.title {
+  font-size: 1.5rem !important;
+}
+
+/* COLUMNS  */
+
+.container > .columns {
+  justify-content: center;
+}
+
+.container > .columns > .column:not(:first-child) {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* .container > .columns > .column {
+  max-width: 20rem;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 769px) {
+
+  .container > .columns > .column:first-child {
+    max-width: 67vw;
+    min-width: 20rem;
+    margin: 0 1rem;
+  }
+} */
+
+/* BUTTONS */
+
+.actions {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.button.is-primary:not(.is-static),
+.button.is-info:not(.is-static) {
+  text-shadow: 0 0.5px 1px rgba(0,0,0,0.2);
+}
+
+.button.is-loading {
+  text-shadow: none !important;
+}
+
+.button + .button.is-link {
+  margin-top: 0.25rem;
+}
+
+button.button {
+  display: inline-block;
+}
+
+.button.is-static.is-link {
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+
+/* IMAGE */
+
+.image {
+  background: lightgray;
+}
+
+/* CROPPIE */
+
+.croppie-container {
+  position: relative;
+}
+
+.croppie-container .cr-slider-wrap {
+  position: absolute;
+  width: auto;
+  display: none;
+}
+
+.croppie-container .cr-slider-wrap .cr-slider {
+  max-width: 75%;
+}
+
+@media screen and (min-width: 769px) {
+  .croppie-container .cr-slider-wrap {
+    display: block;
+  }
+}
+
+.croppie-container .cr-viewport {
+  border: none !important;
+  background-size: contain;
+  background-repeat: no-repeat; 
+}
+
+/* MODALS */
+
+.modal {
+  z-index: 10000 !important;
+}
+
+.modal-content {
+  padding: 2rem;
+  background: white;
+  border-radius: 2px;
+}

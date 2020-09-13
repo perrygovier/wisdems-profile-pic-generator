@@ -1,0 +1,51 @@
+body {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
+}
+
+header  {
+    font-family: worker-3d, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    text-align: center;
+    padding: 30px;
+    background-color: #0F2446;
+    color: white;
+    margin: 20px;
+
+}
+.container, .meme, .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.instruction {
+    display: block;  
+    font-size: 16px;
+    border: double black;
+    padding: 12px;
+    margin: 14px;
+    text-align: center;
+    cursor: pointer;
+  }  
+  
+.meme, .buttons {
+    height: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+
+.upload-wrap input[type="file"] {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+

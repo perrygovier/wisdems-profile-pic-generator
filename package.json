@@ -1,0 +1,42 @@
+{
+  "name": "wisdems-profile-pic-generator",
+  "version": "1.0.0",
+  "description": "Lets user add an overlay to a photo, based on photo-overlay by Benedicte Raae <raae@bgraphic.no>",
+  "author": "Perry Govier <govierp@gmail.com>",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.16.2",
+    "bulma": "^0.4.3",
+    "clipboard": "^1.7.1",
+    "croppie": "^2.5.0",
+    "downloadjs": "^1.4.7",
+    "exif-js": "^2.3.0",
+    "font-awesome": "^4.7.0",
+    "marked": "^0.3.6",
+    "nuxt": "^1.0.0-rc11"
+  },
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "css-loader": "^0.28.4",
+    "eslint": "^3.15.0",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-loader": "^1.6.1",
+    "eslint-plugin-html": "^2.0.0",
+    "eslint-plugin-promise": "^3.4.1",
+    "eslint-plugin-standard": "^2.0.1",
+    "front-matter-loader": "^0.2.0",
+    "imports-loader": "^0.7.1",
+    "node-sass": "^4.14.1",
+    "raw-loader": "^0.5.1",
+    "sass-loader": "^6.0.6",
+    "webpack": "^3.6.0"
+  }
+}
