@@ -8,5 +8,4 @@ npm-debug.log
 .nuxt
 
 # Nuxt generate
-dist
 .DS_Store
