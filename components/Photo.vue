@@ -1,6 +1,6 @@
 <template>
   <div class="image is-16by9">
-    <img :class="{ 'grayscale': overlay }" :src="image"></img>
+    <img :class="" :src="image"></img>
     <img v-if="overlay" :src="overlay"></img>
   </div>
 </template>
@@ -17,7 +17,5 @@ export default {
 </script>
 
 <style scoped>
-.grayscale {
-  filter: grayscale(100%);
-}
+
 </style>
