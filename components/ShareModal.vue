@@ -108,10 +108,13 @@ export default {
       this.$set(this.status, key, true);
     },
     shareImage(e) {
+      const isMobile = navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i);
       setTimeout(() => {
         window.open(this.option.url.web, '_blank');
       }, 25);
-      window.open(this.option.url.app, '_self');
+      if (isMobile) {
+        window.open(this.option.url.app, '_self');
+      }
       this.setStatus('shared');
     },
     initClipboard() {
