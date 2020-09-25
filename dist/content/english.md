@@ -92,3 +92,5 @@ privacy: '**Biden+Harris**-filter-app only sends back usage statistics through G
 Wisconsin is a must-win state for Joe Biden in 2020. Use this tool to show your support for the Biden Harris campaign as a proud Wisconsinite. 
 
 Read more at [wisdems.org](https://wisdems.org)
+
+Project based on [Profile Pic Overlay](https://github.com/lillylabs/profile-pic-overlay) by [Lilly Labs](http://lillylabs.no) in Norway 🇳🇴
