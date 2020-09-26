@@ -1,4 +1,5 @@
 module.exports = {
+  target: 'static',
   env: {
     contentFile: process.env.CONTENT_FILE || 'english.md',
     facebookAppId: process.env.FACEBOOK_APP_ID || '',
