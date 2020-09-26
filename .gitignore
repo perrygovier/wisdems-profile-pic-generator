@@ -12,3 +12,5 @@ npm-debug.log
 # Nuxt generate
 .DS_Store
 .nova
+
+dist
