@@ -21,7 +21,7 @@
             <i :class="[ 'fa', buttons.default.icon] "></i>
           </span>
         </label>
-        <button @click="useProfilePic" class="button is-link is-small" :class="{ 'is-static': uploading || !facebook.initialized }">{{ buttons.facebook.label }}</button>
+        <!-- <button @click="useProfilePic" class="button is-link is-small" :class="{ 'is-static': uploading || !facebook.initialized }">{{ buttons.facebook.label }}</button> -->
       </div>
     </div>
     <input type="file" accept="image/*" name="file" id="file" @change="filesChange($event.target.files)"></input>
@@ -89,6 +89,7 @@ export default {
     filesChange: function(files) {
       this.uploading = true;
       // handle file changes
+      console.log(files);
       var file = files ? files[0] : null;
 
       if (!file) {
