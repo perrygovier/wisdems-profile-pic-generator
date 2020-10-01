@@ -6,6 +6,9 @@
           <nuxt-link to="/" class="nav-item">
             <img :src="$store.state.content.title.image" alt="Logo">
           </nuxt-link>
+          <a href="https://wisdems.org" class="nav-item" target="_blank">
+            <img :src="$store.state.content.title.wisdems" alt="WisDems">
+          </a>
           <nav-item v-for="(item, key) in $store.state.content.nav.some " :key="key" :item="item"></nav-item>
           <nav-item v-for="(item, key) in $store.state.content.nav.about " :key="key" :item="item"></nav-item>
           <nuxt-link class="nav-item" :to="item.href" v-for="(item, key) in $store.state.content.nav.internal " :key="key" :item="item">
@@ -33,6 +36,9 @@
             </nuxt-link>
           </li>
         </ul>
+        <a href="https://wisdems.org" class="nav-item" target="_blank">
+          <img :src="$store.state.content.footer.disclaimer.image" :alt="$store.state.content.footer.disclaimer.text">
+        </a>
       </nav>
     </div>
   </div>
@@ -78,6 +84,10 @@ export default {
   z-index: 1000;
 }
 
+.footer nav {
+  flex-direction: column;
+}
+
 .is-active {
   font-weight: bold;
 }
@@ -91,7 +101,7 @@ export default {
   padding: 65px 0;
 }
 
-.nav-item:nth-child(2) {
+.nav-item:nth-child(3) {
   margin-left: auto;
 }
 

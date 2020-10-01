@@ -2,6 +2,7 @@
 title:
   text: '#BuildBackBetter'
   image: '/images/buildbackbetter/logo.png'
+  wisdems: '/images/buildbackbetter/wisdems-blue.png'
 avatars:
   - '/images/man.jpg'
 overlay:
@@ -84,6 +85,10 @@ nav:
       icon: 'fa-instagram'
       href: 'https://www.instagram.com/wisdems'
       iconOnly: true
+footer:
+  disclaimer:
+    image: '/images/buildbackbetter/disclaimer.png'
+    text: 'Paid for by the Democratic Part of Wisconsin, Ben Wikler, Chair.'
 privacy: '**Biden+Harris**-filter-app only sends back usage statistics through Google Analytics. No images or personal information is stored by us.'
 ---
 

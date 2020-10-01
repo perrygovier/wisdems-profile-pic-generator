@@ -30,11 +30,11 @@ export default {
       enforceBoundary: false,
       viewport: {
         width: this.$el.offsetWidth,
-        height: this.$el.offsetWidth * 9 / 16
+        height: this.$el.offsetWidth * 0.5
       },
       boundary: {
         width: this.$el.offsetWidth,
-        height: this.$el.offsetWidth * 9 / 16
+        height: this.$el.offsetWidth * 0.5
       }
     });
     this.updateImage();

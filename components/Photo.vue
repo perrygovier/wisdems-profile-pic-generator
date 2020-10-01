@@ -1,5 +1,5 @@
 <template>
-  <div class="image is-16by9">
+  <div class="image is-2by1">
     <img :class="" :src="image"></img>
     <img v-if="overlay" :src="overlay"></img>
   </div>

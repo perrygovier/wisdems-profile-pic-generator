@@ -41,6 +41,7 @@ module.exports = {
     { src: 'bulma/bulma.sass', lang: 'sass' },
     { src: 'font-awesome/scss/font-awesome.scss', lang: 'sass' }
   ],
+  cssSourceMap: false,
   plugins: [
     { src: '~plugins/modernizr.js', ssr: false },
     { src: '~plugins/facebook.js', ssr: false },
