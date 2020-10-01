@@ -3,7 +3,7 @@ module.exports = {
   env: {
     contentFile: process.env.CONTENT_FILE || 'english.md',
     facebookAppId: process.env.FACEBOOK_APP_ID || '',
-    gaCode: process.env.GA_CODE || ''
+    gaCode: process.env.GA_CODE || 'UA-3814032-9'
   },
   /*
   ** Headers of the page
