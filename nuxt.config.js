@@ -9,16 +9,16 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: process.env.TITLE || 'Wisdems Biden Endorsement | Filter',
+    title: process.env.TITLE || 'WisDems for Biden',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.DESCRIPTION },
-      { property: 'og:title', content: process.env.OG_TITLE },
+      { hid: 'description', name: 'description', content: 'WisDems Build Back Better Avatar Generator' },
+      { property: 'og:title', content: 'WisDems for Biden' },
       { property: 'og:type', content: 'website' },
-      { property: 'og:url', content: process.env.OG_URL },
-      { property: 'og:image', content: process.env.OG_IMAGE },
-      { property: 'og:description', content: process.env.OG_DESCRIPTION },
+      { property: 'og:url', content: 'wisde.ms' },
+      { property: 'og:image', content: '/meta.png' },
+      { property: 'og:description', content: 'WisDems Build Back Better Avatar Generator' },
       { property: 'fb:app_id', content: process.env.FACEBOOK_APP_ID }
     ],
     link: [
