@@ -68,7 +68,7 @@ steps:
       title: Copy text
       alternative: Share
       continue: Continue
-      text: 'Join me in addressing unconscious gender bias. Together we change mindsets. Get your photo with the #BuildBackBetter-filter  https://wisdems.org'
+      text: "I'm voting for Joe Biden in the November Election!  We’re in a battle for the soul of the nation, and it’s up to all of us to end the Trump nightmare. Join me in showing support: wisdems.org/frame"
       icon: 'fa-clone'
 nav:
   internal:
