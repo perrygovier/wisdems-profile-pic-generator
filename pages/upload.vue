@@ -1,20 +1,30 @@
 <template>
-  <div>
-    <div class="columns">
-      <header class="column is-full">
-        <h1 class="title is-1">
-            {{ title }}
-          </h1>
-          <h2 class="subtitle">
-            {{ prompt }}
-          </h2>
-      </header>
+  <div class="columns">
+    <div class="column is-two-thirds">
+      <label for="file">
+        <photo :image="avatars[0]" :overlay="overlay" :class="{ 'is-static': uploading }"></photo>
+      </label>
     </div>
-    <div class="columns">
-      <div @click="selectImage" class="column is-one-third">
-        <photo :image="avatars[0]" :overlay="overlay"></photo>
+    <div class="column">
+      <header>
+        <h1 class="title">
+          {{ title }}
+        </h1>
+        <p>
+          {{ prompt }}
+        </p>
+      </header>
+      <div class="actions has-text-centered">
+        <label for="file" class="button is-primary" :class="{ 'is-loading': uploading }">
+          <span>{{ buttons.default.label }}&nbsp;</span>
+          <span class=" icon ">
+            <i :class="[ 'fa', buttons.default.icon] "></i>
+          </span>
+        </label>
+        <!-- <button @click="useProfilePic" class="button is-link is-small" :class="{ 'is-static': uploading || !facebook.initialized }">{{ buttons.facebook.label }}</button> -->
       </div>
     </div>
+    <input type="file" accept="image/*" name="file" id="file" @change="filesChange($event.target.files)"></input>
   </div>
 </template>
 
@@ -62,9 +72,19 @@ export default {
           console.error('Facebook profile pic', error);
         });
     },
-    selectImage() {
-      console.log('gets here');
-      this.$router.push('upload');
+    useProfilePic() {
+      if (this.facebook.connected) {
+        this.getProfilePic();
+      } else {
+        Facebook.login()
+          .then(result => {
+            this.facebookResponse(result.response);
+            this.getProfilePic();
+          })
+          .catch(error => {
+            console.error('Facebook login', error);
+          });
+      }
     },
     filesChange: function(files) {
       this.uploading = true;
@@ -99,7 +119,7 @@ export default {
     }
   },
   mounted() {
-    this.setSelectedStep('index');
+    this.setSelectedStep('upload');
   }
 };
 </script>

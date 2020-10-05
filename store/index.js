@@ -11,9 +11,10 @@ const SIZE = {
 
 export const state = () => ({
   steps: {
-    keys: ['index', 'edit', 'share'],
+    keys: ['index', 'upload', 'edit', 'share'],
     selected: 'index'
   },
+  selected: 0,
   uploading: false,
   orientation: 1,
   image: null,

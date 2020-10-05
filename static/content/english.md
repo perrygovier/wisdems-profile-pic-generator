@@ -11,6 +11,16 @@ overlay:
   lg: '/images/buildbackbetter/filter-1000.png'
 steps:
   index:
+      label: Choose
+      title: 'Make a Biden + Harris Endorsement Graphic'
+      prompt: 'Choose an endorsement graphic to get started'
+      buttons:
+        default:
+          label: 'Upload your photo'
+          icon: 'fa-upload'
+        facebook:
+          label: 'Use your Facebook profile picture'
+  upload:
     label: Upload
     title: 'Make a Biden + Harris Endorsement Graphic'
     prompt: 'Support the campaign. Create your own #BuildBackBetter photo and share with your friends.'
