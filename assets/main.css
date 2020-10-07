@@ -99,6 +99,10 @@ button.button {
   border-color: transparent !important;
 }
 
+.clickable {
+  cursor: pointer;
+}
+
 /* IMAGE */
 
 .image {

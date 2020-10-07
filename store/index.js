@@ -22,7 +22,8 @@ export const state = () => ({
   size: SIZE.LG,
   filtering: false,
   filteredImage: null,
-  overlay: null,
+  overlays: null,
+  selectedoverlay: null,
   error: [],
   content: { ...content.attributes, about: content.body }
 });
@@ -48,6 +49,9 @@ export const mutations = {
   },
   setOrientation(state, orientation) {
     state.orientation = orientation;
+  },
+  setOverlay(state, overlay) {
+    state.selectedoverlay = overlay;
   },
   setImage(state, image) {
     state.image = image;
@@ -76,6 +80,9 @@ export const mutations = {
 };
 
 export const actions = {
+  chooseOverlay({ commit }, overlay) {
+    commit('setOverlay', overlay);
+  },
   useImage({ commit }, imageUrl) {
     commit('setImage', null);
     commit('startUpload');

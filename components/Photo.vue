@@ -1,14 +1,14 @@
 <template>
-  <div class="image is-2by1">
-    <img :class="" :src="image"></img>
-    <img v-if="overlay" :src="overlay"></img>
+  <div :class="['image', ratio]">
+    <img :src="image"/>
+    <img v-if="overlay" :src="overlay"/>
   </div>
 </template>
 
 <script>
 
 export default {
-  props: ['image', 'overlay'],
+  props: ['image', 'overlay', 'ratio'],
   mounted() {
 
   }

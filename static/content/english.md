@@ -3,17 +3,39 @@ title:
   text: '#BuildBackBetter'
   image: '/images/buildbackbetter/logo.png'
   wisdems: '/images/buildbackbetter/wisdems-blue.png'
-avatars:
-  - '/images/man.jpg'
-overlay:
-  sm: '/images/buildbackbetter/filter-500.png'
-  md: '/images/buildbackbetter/filter-750.png'
-  lg: '/images/buildbackbetter/filter-1000.png'
+overlays:
+  thin: 
+    ratio: 1
+    bulma: is-square
+    column: is-one-quarter
+    avatar: '/images/buildbackbetter/mark-square.jpg'
+    urls:
+      sm: '/images/buildbackbetter/filter-square-thin-500.png'
+      md: '/images/buildbackbetter/filter-square-thin-750.png'
+      lg: '/images/buildbackbetter/filter-square-thin-1000.png'
+  wide: 
+    ratio: .5
+    bulma: is-2by1
+    column: is-one-half
+    avatar: '/images/buildbackbetter/mark-wide.jpg'
+    urls:
+      sm: '/images/buildbackbetter/filter-500.png'
+      md: '/images/buildbackbetter/filter-750.png'
+      lg: '/images/buildbackbetter/filter-1000.png'
+  bold: 
+    ratio: 1
+    bulma: is-square
+    column: is-one-quarter
+    avatar: '/images/buildbackbetter/mark-square.jpg'
+    urls:
+      sm: '/images/buildbackbetter/filter-square-bold-500.png'
+      md: '/images/buildbackbetter/filter-square-bold-750.png'
+      lg: '/images/buildbackbetter/filter-square-bold-1000.png'
 steps:
   index:
       label: Choose
       title: 'Make a Biden + Harris Endorsement Graphic'
-      prompt: 'Choose an endorsement graphic to get started'
+      prompt: 'Choose an endorsement filter to get started'
       buttons:
         default:
           label: 'Upload your photo'

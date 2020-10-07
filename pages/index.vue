@@ -11,8 +11,11 @@
       </header>
     </div>
     <div class="columns">
-      <div @click="selectImage" class="column is-one-third">
-        <photo :image="avatars[0]" :overlay="overlay"></photo>
+      <div v-for="overlay in overlays" 
+           :key="overlay.urls.lg" 
+           @click="selectImage(overlay)" 
+           :class="['column', 'clickable', overlay.column]">
+        <photo :image="overlay.avatar" :overlay="overlay.urls.lg" :ratio="overlay.bulma"></photo>
       </div>
     </div>
   </div>
@@ -21,7 +24,6 @@
 <script>
 import { mapState, mapActions, mapMutations } from 'vuex';
 import Photo from '~/components/Photo.vue';
-import Facebook from '../services/facebook.service';
 
 export default {
   components: {
@@ -37,64 +39,28 @@ export default {
       image: state => state.image,
       title: state => state.content.steps.index.title,
       prompt: state => state.content.steps.index.prompt,
-      avatars: state => state.content.avatars,
-      overlay: state => state.content.overlay.lg,
-      buttons: state => state.content.steps.index.buttons,
-      facebook: state => state.facebook
+      overlays: state => state.content.overlays,
+      selectedoverlay: state => state.selectedoverlay,
+      buttons: state => state.content.steps.index.buttons
     })
   },
   methods: {
-    ...mapActions(['uploadFile', 'useImage']),
+    ...mapActions(['chooseOverlay']),
     ...mapMutations({
       addError: 'addError',
       setOrientation: 'setOrientation',
-      setSelectedStep: 'setSelectedStep',
-      facebookResponse: 'facebook/response'
+      setSelectedStep: 'setSelectedStep'
     }),
-    getProfilePic() {
-      this.uploading = true;
-      Facebook.getProfilePicture(this.facebook.authResponse)
-        .then(image => {
-          this.useImage(image);
-        })
-        .catch(error => {
-          this.uploading = false;
-          console.error('Facebook profile pic', error);
-        });
-    },
-    selectImage() {
-      console.log('gets here');
-      this.$router.push('upload');
-    },
-    filesChange: function(files) {
-      this.uploading = true;
-      // handle file changes
-      console.log(files);
-      var file = files ? files[0] : null;
-
-      if (!file) {
-        this.addError(new Error('No file'));
-        return;
-      }
-
-      if (!file.type.match('image.*')) {
-        this.addError(new Error('File is not an image'));
-        return;
-      }
-
-      const EXIF = require('exif-js');
-      const that = this;
-      EXIF.getData(file, function() {
-        that.setOrientation(EXIF.getTag(this, 'Orientation'));
-      });
-
-      this.uploadFile(file);
+    selectImage(overlay) {
+      console.log('gets here', overlay);
+      // this.$router.push('upload');
+      this.chooseOverlay(overlay);
     }
   },
   watch: {
-    image(newValue, oldValue) {
+    selectedoverlay(newValue, oldValue) {
       if (newValue) {
-        this.$router.push('edit');
+        this.$router.push('upload');
       }
     }
   },

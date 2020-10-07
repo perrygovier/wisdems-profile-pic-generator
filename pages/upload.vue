@@ -2,7 +2,7 @@
   <div class="columns">
     <div class="column is-two-thirds">
       <label for="file">
-        <photo :image="avatars[0]" :overlay="overlay" :class="{ 'is-static': uploading }"></photo>
+        <photo :image="overlay.avatar" :overlay="overlay.urls.lg" :ratio="overlay.bulma" :class="{ 'is-static': uploading }"></photo>
       </label>
     </div>
     <div class="column">
@@ -47,8 +47,7 @@ export default {
       image: state => state.image,
       title: state => state.content.steps.index.title,
       prompt: state => state.content.steps.index.prompt,
-      avatars: state => state.content.avatars,
-      overlay: state => state.content.overlay.lg,
+      overlay: state => state.selectedoverlay,
       buttons: state => state.content.steps.index.buttons,
       facebook: state => state.facebook
     })
