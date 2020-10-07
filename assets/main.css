@@ -68,10 +68,12 @@
     margin: 0 1rem;
   }
 } */
-
-.no-scroll {
-  max-width: calc(100vh - 200px);
+@media only screen and (min-height: 400px) {
+  .no-scroll {
+    max-width: calc(100vh - 240px);
+  }
 }
+
 
 /* BUTTONS */
 

@@ -3,34 +3,71 @@ title:
   text: '#BuildBackBetter'
   image: '/images/buildbackbetter/logo.png'
   wisdems: '/images/buildbackbetter/wisdems-blue.png'
-overlays:
-  thin: 
-    ratio: 1
+overlays: 
+  - ratio: 1
     bulma: is-square
     column: is-one-quarter
-    avatar: '/images/buildbackbetter/mark-square.jpg'
+    avatar: '/images/buildbackbetter/placeholder-square.png'
     urls:
       sm: '/images/buildbackbetter/filter-square-thin-500.png'
       md: '/images/buildbackbetter/filter-square-thin-750.png'
       lg: '/images/buildbackbetter/filter-square-thin-1000.png'
-  wide: 
-    ratio: .5
+  - ratio: .5
     bulma: is-2by1
     column: is-one-half
-    avatar: '/images/buildbackbetter/mark-wide.jpg'
+    avatar: '/images/buildbackbetter/placeholder-wide.png'
     urls:
       sm: '/images/buildbackbetter/filter-500.png'
       md: '/images/buildbackbetter/filter-750.png'
       lg: '/images/buildbackbetter/filter-1000.png'
-  bold: 
-    ratio: 1
+  - ratio: 1
     bulma: is-square
     column: is-one-quarter
-    avatar: '/images/buildbackbetter/mark-square.jpg'
+    avatar: '/images/buildbackbetter/placeholder-square-zoom.png'
     urls:
       sm: '/images/buildbackbetter/filter-square-bold-500.png'
       md: '/images/buildbackbetter/filter-square-bold-750.png'
       lg: '/images/buildbackbetter/filter-square-bold-1000.png'
+  - ratio: 1
+    bulma: is-square
+    column: is-one-fifth
+    avatar: '/images/buildbackbetter/placeholder-square.png'
+    urls:
+      sm: '/images/buildbackbetter/BidenHarris-Frames-01.png'
+      md: '/images/buildbackbetter/BidenHarris-Frames-01.png'
+      lg: '/images/buildbackbetter/BidenHarris-Frames-01.png'
+  - ratio: 1
+    bulma: is-square
+    column: is-one-fifth
+    avatar: '/images/buildbackbetter/placeholder-square.png'
+    urls:
+      sm: '/images/buildbackbetter/BidenHarris-Frames-02.png'
+      md: '/images/buildbackbetter/BidenHarris-Frames-02.png'
+      lg: '/images/buildbackbetter/BidenHarris-Frames-02.png'
+  - ratio: 1
+    bulma: is-square
+    column: is-one-fifth
+    avatar: '/images/buildbackbetter/placeholder-square.png'
+    urls:
+      sm: '/images/buildbackbetter/BidenHarris-Frames-03.png'
+      md: '/images/buildbackbetter/BidenHarris-Frames-03.png'
+      lg: '/images/buildbackbetter/BidenHarris-Frames-03.png'
+  - ratio: 1
+    bulma: is-square
+    column: is-one-fifth
+    avatar: '/images/buildbackbetter/placeholder-square.png'
+    urls:
+      sm: '/images/buildbackbetter/BidenHarris-Frames-04.png'
+      md: '/images/buildbackbetter/BidenHarris-Frames-04.png'
+      lg: '/images/buildbackbetter/BidenHarris-Frames-04.png'
+  - ratio: 1
+    bulma: is-square
+    column: is-one-fifth
+    avatar: '/images/buildbackbetter/placeholder-square.png'
+    urls:
+      sm: '/images/buildbackbetter/BidenHarris-Frames-05.png'
+      md: '/images/buildbackbetter/BidenHarris-Frames-05.png'
+      lg: '/images/buildbackbetter/BidenHarris-Frames-05.png'
 steps:
   index:
       label: Choose

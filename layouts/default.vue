@@ -19,14 +19,12 @@
         </div>
       </div>
     </header>
-    <div class="hero is-fullheight" :class="'is-'+$store.state.steps.selected">
-      <main class="hero-body ">
-        <div class="container ">
-          <nuxt></nuxt>
-        </div>
-      </main>
-    </div>
-    <div class="footer ">
+    <main class="hero-body" :class="'is-'+$store.state.steps.selected">
+      <div class="container ">
+        <nuxt></nuxt>
+      </div>
+    </main>
+    <footer class="footer ">
       <nav class="breadcrumb has-arrow-separator is-centered">
         <ul>
           <li v-for="(key, index) in $store.state.steps.keys" :key="key" :class="{ 'is-active': $store.state.steps.selected === key, 'is-static': isStatic(key) }">
@@ -40,7 +38,7 @@
           <img :src="$store.state.content.footer.disclaimer.image" :alt="$store.state.content.footer.disclaimer.text">
         </a>
       </nav>
-    </div>
+    </footer>
   </div>
 </template>
 
@@ -61,9 +59,14 @@ export default {
 </script>
 
 <style scoped>
+.app {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .navbar {
-  position: fixed;
-  top: 0;
   width: 100%;
   box-shadow: 0 1px 2px rgba(10, 10, 10, 0.1);
   padding: 0.5rem 0;
@@ -76,8 +79,6 @@ export default {
 }
 
 .footer {
-  position: fixed;
-  bottom: 0;
   width: 100%;
   box-shadow: 0 -1px 2px rgba(10, 10, 10, 0.1);
   padding: 0.5rem 0;
@@ -97,8 +98,11 @@ export default {
   opacity: 0.5;
 }
 
-.hero {
-  padding: 65px 0;
+.hero-body {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-item:nth-child(3) {
