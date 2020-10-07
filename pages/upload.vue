@@ -1,6 +1,6 @@
 <template>
   <div class="columns">
-    <div class="column is-two-thirds">
+    <div class="column is-two-thirds no-scroll">
       <label for="file">
         <photo :image="overlay.avatar" :overlay="overlay.urls.lg" :ratio="overlay.bulma" :class="{ 'is-static': uploading }"></photo>
       </label>

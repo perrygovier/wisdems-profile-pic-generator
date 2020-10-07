@@ -55,13 +55,14 @@ export default {
       console.log('gets here', overlay);
       // this.$router.push('upload');
       this.chooseOverlay(overlay);
+      this.$router.push('upload');
     }
   },
   watch: {
     selectedoverlay(newValue, oldValue) {
-      if (newValue) {
-        this.$router.push('upload');
-      }
+      // if (newValue) {
+      //   this.$router.push('upload');
+      // }
     }
   },
   mounted() {

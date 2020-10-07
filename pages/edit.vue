@@ -1,6 +1,6 @@
 <template>
   <div class="columns">
-    <no-ssr class="column two-thirds" style="align-self:flex-start">
+    <no-ssr class="column two-thirds no-scroll" style="align-self:flex-start">
       <croppie ref="croppie" v-if="image" :image="image" :overlay="overlay" :orientation="orientation" :ratio="ratio"></croppie>
     </no-ssr>
     <div class="column">

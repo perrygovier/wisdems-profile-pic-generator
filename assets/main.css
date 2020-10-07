@@ -69,6 +69,10 @@
   }
 } */
 
+.no-scroll {
+  max-width: calc(100vh - 200px);
+}
+
 /* BUTTONS */
 
 .actions {

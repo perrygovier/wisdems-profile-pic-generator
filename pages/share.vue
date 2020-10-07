@@ -1,6 +1,6 @@
 <template>
   <div class="columns">
-    <div class="column is-two-thirds">
+    <div class="column is-two-thirds no-scroll">
       <photo :image="image"></photo>
       <button v-if="supported.filesystem" @click="downloadImage" class="button is-small is-link is-fullwidth">
         <span>{{ download.title }}</span>
