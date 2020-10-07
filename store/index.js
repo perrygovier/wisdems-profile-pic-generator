@@ -105,7 +105,7 @@ export const actions = {
   filterImage({ commit, dispatch, state }, image) {
     commit('startFiltering');
     commit('setFiltredImage', null);
-    Filter.overlay(image, state.overlay).then(filtredImage => {
+    Filter.overlay(image, state.selectedoverlay.urls.lg).then(filtredImage => {
       commit('setFiltredImage', filtredImage);
       commit('endFiltering');
     });

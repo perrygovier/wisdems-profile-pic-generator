@@ -1,7 +1,7 @@
 <template>
   <div class="columns">
     <no-ssr class="column two-thirds" style="align-self:flex-start">
-      <croppie ref="croppie" v-if="image" :image="image" :overlay="overlay" :orientation="orientation" :size="size"></croppie>
+      <croppie ref="croppie" v-if="image" :image="image" :overlay="overlay" :orientation="orientation" :ratio="ratio"></croppie>
     </no-ssr>
     <div class="column">
       <div>
@@ -41,10 +41,10 @@ export default {
     ...mapState({
       image: state => state.image,
       filteredImage: state => state.filteredImage,
-      size: state => state.size,
+      ratio: state => state.selectedoverlay.ratio,
       title: state => state.content.steps.edit.title,
       orientation: state => state.orientation,
-      overlay: state => state.content.overlay.lg,
+      overlay: state => state.selectedoverlay.urls.lg,
       options: state => state.content.steps.edit.options
     }),
     content: function () {

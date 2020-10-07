@@ -6,7 +6,7 @@
 <script>
 
 export default {
-  props: ['image', 'overlay', 'orientation', 'size'],
+  props: ['image', 'overlay', 'orientation', 'ratio'],
   methods: {
     getCroppedImage: function () {
       return this.croppie.result({ type: 'base64', size: 'original', format: 'png', quality: 1 });
@@ -30,11 +30,11 @@ export default {
       enforceBoundary: false,
       viewport: {
         width: this.$el.offsetWidth,
-        height: this.$el.offsetWidth * 0.5
+        height: this.$el.offsetWidth * this.ratio
       },
       boundary: {
         width: this.$el.offsetWidth,
-        height: this.$el.offsetWidth * 0.5
+        height: this.$el.offsetWidth * this.ratio
       }
     });
     this.updateImage();
