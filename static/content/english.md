@@ -154,6 +154,10 @@ nav:
       icon: 'fa-instagram'
       href: 'https://www.instagram.com/wisdems'
       iconOnly: true
+    - label: 'Twitter'
+      icon: 'fa-twitter'
+      href: 'https://twitter.com/intent/follow?region=follow_link&screen_name=WisDems'
+      iconOnly: true
 footer:
   disclaimer:
     image: '/images/buildbackbetter/disclaimer.png'
