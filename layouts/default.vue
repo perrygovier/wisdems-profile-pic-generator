@@ -3,7 +3,7 @@
     <header class="navbar has-shadow">
       <div class="container">
         <div class="navbar-brand">
-          <nuxt-link to="/" class="nav-item">
+          <nuxt-link to="/" class="nav-item hide-sm is-hidden-mobile">
             <img :src="$store.state.content.title.image" alt="Logo">
           </nuxt-link>
           <a href="https://wisdems.org" class="nav-item" target="_blank">
@@ -51,7 +51,9 @@ export default {
   },
   methods: {
     isStatic(key) {
-      return (key === 'edit' && !this.$store.state.image) || (key === 'share' && !this.$store.state.filteredImage);
+      return (key === 'upload' && !this.$store.state.selectedoverlay) ||
+             (key === 'edit' && !this.$store.state.image) ||
+             (key === 'share' && !this.$store.state.filteredImage);
     }
   }
 };
@@ -107,6 +109,13 @@ export default {
 
 .nav-item:nth-child(3) {
   margin-left: auto;
+}
+
+@media screen and (max-width: 375px) {
+  .footer .breadcrumb a {
+    padding-left: .2em;
+    padding-right:.2em;
+  }
 }
 
 </style>
