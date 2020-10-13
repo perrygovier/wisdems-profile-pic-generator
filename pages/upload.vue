@@ -45,10 +45,10 @@ export default {
   computed: {
     ...mapState({
       image: state => state.image,
-      title: state => state.content.steps.index.title,
-      prompt: state => state.content.steps.index.prompt,
+      title: state => state.content.steps.upload.title,
+      prompt: state => state.content.steps.upload.prompt,
       overlay: state => state.selectedoverlay,
-      buttons: state => state.content.steps.index.buttons,
+      buttons: state => state.content.steps.upload.buttons,
       facebook: state => state.facebook
     })
   },

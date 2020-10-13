@@ -73,16 +73,10 @@ steps:
       label: Choose
       title: 'Make a Biden + Harris Endorsement Graphic'
       prompt: 'Choose an endorsement filter to get started'
-      buttons:
-        default:
-          label: 'Upload your photo'
-          icon: 'fa-upload'
-        facebook:
-          label: 'Use your Facebook profile picture'
   upload:
     label: Upload
-    title: 'Make a Biden + Harris Endorsement Graphic'
-    prompt: 'Support the campaign. Create your own #BuildBackBetter photo and share with your friends.'
+    title: 'Choose a profile image to upload'
+    prompt: 'Upload your profile image to add this frame to it. Note, we do not save this image.'
     buttons:
       default:
         label: 'Upload your photo'
