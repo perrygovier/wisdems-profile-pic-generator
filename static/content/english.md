@@ -1,78 +1,102 @@
 ---
 title:
-  text: '#BuildBackBetter'
-  image: '/images/buildbackbetter/logo.png'
+  text: '#OneYearToWin'
+  image: '/images/oneyeartowin/logo.png'
   wisdems: '/images/buildbackbetter/wisdems-blue.png'
 overlays: 
   - ratio: 1
     bulma: is-square
     column: is-one-quarter
-    avatar: '/images/buildbackbetter/placeholder-square.png'
+    avatar: '/images/placeholder-square.png'
     urls:
-      sm: '/images/buildbackbetter/filter-square-thin-500.png'
-      md: '/images/buildbackbetter/filter-square-thin-750.png'
-      lg: '/images/buildbackbetter/filter-square-thin-1000.png'
-  - ratio: .5
-    bulma: is-2by1
+      sm: '/images/oneyeartowin/bar-500.png'
+      md: '/images/oneyeartowin/bar-750.png'
+      lg: '/images/oneyeartowin/bar-1000.png'
+  - ratio: .563
+    bulma: is-16by9
     column: is-one-half
-    avatar: '/images/buildbackbetter/placeholder-wide.png'
+    avatar: '/images/placeholder-16x9.png'
     urls:
-      sm: '/images/buildbackbetter/filter-500.png'
-      md: '/images/buildbackbetter/filter-750.png'
-      lg: '/images/buildbackbetter/filter-1000.png'
+      sm: '/images/oneyeartowin/filter-500.png'
+      md: '/images/oneyeartowin/filter-750.png'
+      lg: '/images/oneyeartowin/filter-1000.png'
   - ratio: 1
     bulma: is-square
     column: is-one-quarter
-    avatar: '/images/buildbackbetter/placeholder-square-zoom.png'
+    avatar: '/images/placeholder-square-zoom.png'
     urls:
-      sm: '/images/buildbackbetter/filter-square-bold-500.png'
-      md: '/images/buildbackbetter/filter-square-bold-750.png'
-      lg: '/images/buildbackbetter/filter-square-bold-1000.png'
-  - ratio: 1
-    bulma: is-square
-    column: is-one-fifth
-    avatar: '/images/buildbackbetter/placeholder-square.png'
-    urls:
-      sm: '/images/buildbackbetter/BidenHarris-Frames-01.png'
-      md: '/images/buildbackbetter/BidenHarris-Frames-01.png'
-      lg: '/images/buildbackbetter/BidenHarris-Frames-01.png'
-  - ratio: 1
-    bulma: is-square
-    column: is-one-fifth
-    avatar: '/images/buildbackbetter/placeholder-square.png'
-    urls:
-      sm: '/images/buildbackbetter/BidenHarris-Frames-02.png'
-      md: '/images/buildbackbetter/BidenHarris-Frames-02.png'
-      lg: '/images/buildbackbetter/BidenHarris-Frames-02.png'
-  - ratio: 1
-    bulma: is-square
-    column: is-one-fifth
-    avatar: '/images/buildbackbetter/placeholder-square.png'
-    urls:
-      sm: '/images/buildbackbetter/BidenHarris-Frames-03.png'
-      md: '/images/buildbackbetter/BidenHarris-Frames-03.png'
-      lg: '/images/buildbackbetter/BidenHarris-Frames-03.png'
-  - ratio: 1
-    bulma: is-square
-    column: is-one-fifth
-    avatar: '/images/buildbackbetter/placeholder-square.png'
-    urls:
-      sm: '/images/buildbackbetter/BidenHarris-Frames-04.png'
-      md: '/images/buildbackbetter/BidenHarris-Frames-04.png'
-      lg: '/images/buildbackbetter/BidenHarris-Frames-04.png'
-  - ratio: 1
-    bulma: is-square
-    column: is-one-fifth
-    avatar: '/images/buildbackbetter/placeholder-square.png'
-    urls:
-      sm: '/images/buildbackbetter/BidenHarris-Frames-05.png'
-      md: '/images/buildbackbetter/BidenHarris-Frames-05.png'
-      lg: '/images/buildbackbetter/BidenHarris-Frames-05.png'
+      sm: '/images/oneyeartowin/flair-500.png'
+      md: '/images/oneyeartowin/flair-750.png'
+      lg: '/images/oneyeartowin/flair-1000.png'
+  # - ratio: 1
+  #   bulma: is-square
+  #   column: is-one-quarter
+  #   avatar: '/images/buildbackbetter/placeholder-square.png'
+  #   urls:
+  #     sm: '/images/buildbackbetter/filter-square-thin-500.png'
+  #     md: '/images/buildbackbetter/filter-square-thin-750.png'
+  #     lg: '/images/buildbackbetter/filter-square-thin-1000.png'
+  # - ratio: .5
+  #   bulma: is-2by1
+  #   column: is-one-half
+  #   avatar: '/images/buildbackbetter/placeholder-wide.png'
+  #   urls:
+  #     sm: '/images/buildbackbetter/filter-500.png'
+  #     md: '/images/buildbackbetter/filter-750.png'
+  #     lg: '/images/buildbackbetter/filter-1000.png'
+  # - ratio: 1
+  #   bulma: is-square
+  #   column: is-one-quarter
+  #   avatar: '/images/buildbackbetter/placeholder-square-zoom.png'
+  #   urls:
+  #     sm: '/images/buildbackbetter/filter-square-bold-500.png'
+  #     md: '/images/buildbackbetter/filter-square-bold-750.png'
+  #     lg: '/images/buildbackbetter/filter-square-bold-1000.png'
+  # - ratio: 1
+  #   bulma: is-square
+  #   column: is-one-fifth
+  #   avatar: '/images/buildbackbetter/placeholder-square.png'
+  #   urls:
+  #     sm: '/images/buildbackbetter/BidenHarris-Frames-01.png'
+  #     md: '/images/buildbackbetter/BidenHarris-Frames-01.png'
+  #     lg: '/images/buildbackbetter/BidenHarris-Frames-01.png'
+  # - ratio: 1
+  #   bulma: is-square
+  #   column: is-one-fifth
+  #   avatar: '/images/buildbackbetter/placeholder-square.png'
+  #   urls:
+  #     sm: '/images/buildbackbetter/BidenHarris-Frames-02.png'
+  #     md: '/images/buildbackbetter/BidenHarris-Frames-02.png'
+  #     lg: '/images/buildbackbetter/BidenHarris-Frames-02.png'
+  # - ratio: 1
+  #   bulma: is-square
+  #   column: is-one-fifth
+  #   avatar: '/images/buildbackbetter/placeholder-square.png'
+  #   urls:
+  #     sm: '/images/buildbackbetter/BidenHarris-Frames-03.png'
+  #     md: '/images/buildbackbetter/BidenHarris-Frames-03.png'
+  #     lg: '/images/buildbackbetter/BidenHarris-Frames-03.png'
+  # - ratio: 1
+  #   bulma: is-square
+  #   column: is-one-fifth
+  #   avatar: '/images/buildbackbetter/placeholder-square.png'
+  #   urls:
+  #     sm: '/images/buildbackbetter/BidenHarris-Frames-04.png'
+  #     md: '/images/buildbackbetter/BidenHarris-Frames-04.png'
+  #     lg: '/images/buildbackbetter/BidenHarris-Frames-04.png'
+  # - ratio: 1
+  #   bulma: is-square
+  #   column: is-one-fifth
+  #   avatar: '/images/buildbackbetter/placeholder-square.png'
+  #   urls:
+  #     sm: '/images/buildbackbetter/BidenHarris-Frames-05.png'
+  #     md: '/images/buildbackbetter/BidenHarris-Frames-05.png'
+  #     lg: '/images/buildbackbetter/BidenHarris-Frames-05.png'
 steps:
   index:
       label: Choose
-      title: 'Make a Biden + Harris Endorsement Graphic'
-      prompt: 'Choose an endorsement filter to get started'
+      title: 'Make a One Year to Win Graphic'
+      prompt: 'Choose a filter to get started'
   upload:
     label: Upload
     title: 'Choose a profile image to upload'
@@ -94,7 +118,7 @@ steps:
         label: Change image
   share:
     label: Share
-    title: 'Share the #BuildBackBetter photo with your friends!'
+    title: 'Share the #OneYearToWin photo with your friends!'
     options:
       facebook:
         label: Facebook
@@ -127,11 +151,11 @@ steps:
       fileName: wisconsinite-for-biden
     suggestion:
       label: Copy text
-      instruction: 'Paste the copied text or write your own. Remember #BuildBackBetter'
+      instruction: 'Paste the copied text or write your own. Remember #OneYearToWin'
       title: Copy text
       alternative: Share
       continue: Continue
-      text: "I'm voting for Joe Biden in the November Election!  We’re in a battle for the soul of the nation, and it’s up to all of us to end the Trump nightmare. Join me in showing support: wisdems.org/frame"
+      text: "As Goes Wisconsin, So Goes the Nation. We've got one year to win in 2022. Join me in showing support: wisdems.org/frame"
       icon: 'fa-clone'
 nav:
   internal:
@@ -159,9 +183,9 @@ footer:
 privacy: '**Biden+Harris**-filter-app only sends back usage statistics through Google Analytics. No images or personal information is stored by us.'
 ---
 
-# Make a Biden+Harris Endorsement Graphic!
+# Make a WisDems One Year to Win Graphic!
 
-Wisconsin is a must-win state for Joe Biden in 2020. Use this tool to show your support for the Biden Harris campaign as a proud Wisconsinite. 
+The senate hangs in the balance. Wisconsin must defeat Ron Johnson in 2022. Use this tool to show your support for the campaign as a proud Wisconsinite. 
 
 Read more at [wisdems.org](https://wisdems.org)
 

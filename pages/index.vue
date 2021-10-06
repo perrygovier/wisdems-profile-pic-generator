@@ -18,14 +18,14 @@
         <photo :image="overlay.avatar" :overlay="overlay.urls.lg" :ratio="overlay.bulma"></photo>
       </div>
     </div>
-    <div class="columns">
+    <!-- <div class="columns">
       <div v-for="overlay in overlays.slice(3)" 
            :key="overlay.urls.lg" 
            @click="selectImage(overlay)" 
            :class="['column', 'clickable', overlay.column]">
         <photo :image="overlay.avatar" :overlay="overlay.urls.lg" :ratio="overlay.bulma"></photo>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
