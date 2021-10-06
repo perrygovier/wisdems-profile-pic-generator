@@ -17,7 +17,7 @@ module.exports = {
       { property: 'og:title', content: 'Make a One Year 2 Win photo frame' },
       { property: 'og:type', content: 'website' },
       { property: 'og:url', content: 'wisde.ms' },
-      { property: 'og:image', content: '/meta.png' },
+      { property: 'og:image', content: 'https://wisde.ms/meta.png' },
       { property: 'og:description', content: 'We only have One Year to re-elect Gov. Evers and replace Ron Johnson! Upload your framed profile pic, help spread the word, & volunteer with WisDems today!' },
       { property: 'fb:app_id', content: process.env.FACEBOOK_APP_ID },
       { property: 'twitter:card', content: 'summary_large_image' },
