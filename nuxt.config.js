@@ -9,16 +9,16 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: process.env.TITLE || 'WisDems for Biden',
+    title: process.env.TITLE || 'Make a One Year 2 Win photo frame',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'WisDems Build Back Better Avatar Generator' },
-      { property: 'og:title', content: 'WisDems for Biden' },
+      { hid: 'description', name: 'description', content: 'Upload your framed profile pic to -any- social media account! We only have One Year to re-elect Gov. Evers and replace Ron Johnson – both must-win elections for Wisconsinites! Help spread the word & volunteer with WisDems today. ' },
+      { property: 'og:title', content: 'Make a One Year 2 Win photo frame' },
       { property: 'og:type', content: 'website' },
       { property: 'og:url', content: 'wisde.ms' },
       { property: 'og:image', content: '/meta.png' },
-      { property: 'og:description', content: 'WisDems Build Back Better Avatar Generator' },
+      { property: 'og:description', content: 'Upload your framed profile pic to -any- social media account! We only have One Year to re-elect Gov. Evers and replace Ron Johnson – both must-win elections for Wisconsinites! Help spread the word & volunteer with WisDems today. ' },
       { property: 'fb:app_id', content: process.env.FACEBOOK_APP_ID }
     ],
     link: [

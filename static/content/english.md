@@ -95,8 +95,8 @@ overlays:
 steps:
   index:
       label: Choose
-      title: 'Make a One Year to Win Graphic'
-      prompt: 'Choose a filter to get started'
+      title: 'Make a One Year 2 Win photo frame'
+      prompt: 'Upload your framed profile pic to -any- social media account! We only have One Year to re-elect Gov. Evers and replace Ron Johnson – both must-win elections for Wisconsinites! Help spread the word & volunteer with WisDems today. Choose a frame to get started.'
   upload:
     label: Upload
     title: 'Choose a profile image to upload'
@@ -180,7 +180,7 @@ footer:
   disclaimer:
     image: '/images/buildbackbetter/disclaimer.png'
     text: 'Paid for by the Democratic Part of Wisconsin, Ben Wikler, Chair.'
-privacy: '**Biden+Harris**-filter-app only sends back usage statistics through Google Analytics. No images or personal information is stored by us.'
+privacy: '**OneYearToWin**-filter-app only sends back usage statistics through Google Analytics. No images or personal information is stored by us.'
 ---
 
 # Make a WisDems One Year to Win Graphic!
